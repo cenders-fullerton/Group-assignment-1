@@ -1,4 +1,9 @@
 #include "programs.hpp"
+#include <iostream>
+#include <sys\stat.h>
+#include <dirent.h>
+#include <conio.h>
+using namespace std;
 
 void dir(){
     struct dirent *d;
@@ -35,7 +40,7 @@ void dir(){
 
 
         }
-        cout << d->d_name<<endl<<endl;
+        cout << d->d_name<<endl;
     }
     closedir(dr);
 
